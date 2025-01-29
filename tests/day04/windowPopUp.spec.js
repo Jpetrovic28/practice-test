@@ -1,6 +1,6 @@
 import { expect, test } from "@playwright/test";
 
-test("Window pop-up practice", async ({ page }) => {
+test("Window pop-up practice @smoke", async ({ page }) => {
     //creating event listeners for monitoring window pop-up
     let promiseNewPage = page.waitForEvent("popup");//no await HERE
     await page.goto("https://practice.cydeo.com/windows");
